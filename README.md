@@ -16,6 +16,11 @@ Here the results of a statistical analysis of breast cancer data are presented. 
 
 ## Motivation and Methodology
 The goal of this project is to understand the link between the genetic and physiological data of a patient and how efficiently cancer-treating drugs perform on their cells. 
+
+<p align="center">
+    <img src="./media/scope.png" height="350" alt="scope"/>
+</p>
+
 - First, patients were divided into groups based on the effectiveness of the treatments on their cells. 
 - Then, we tried to explain these groups with their gene expression.
 
@@ -27,6 +32,13 @@ To simplify the project scope, the analysis is strictly limited to patients havi
 <p align="center">
     <img src="./media/why_breast.svg" height="350" alt="why breast?"/>
 </p>
+
+<a name="assumptions"/>
+
+## Assumptions and terminology 
+In the following sections, the terms "AUC" or "AUC score" are equivalent to "drug efficacy". AUC actually refers to the Area Under the dose-response Curve. These value should therefore not be understood as precise indicator of the effectiveness of treatments on patients, but as the result of in-vitro studies.
+
+<a name="requirements"/>
 
 ## Requirements 
 The project itself uses the following files from the CCLE database:
@@ -41,12 +53,8 @@ On the R side, loading the project in R Studio should prompt to load any missing
 
 A collection of utilities and preprocessing scripts are included in the utilities folder of the project. 
 
-<a name="assumptions"/>
 
-## Assumptions and terminology 
-In the following sections, the terms "AUC" or "AUC score" are equivalent to "drug efficacy". AUC actually refers to the Area Under the dose-response Curve. These values should therefore not be understood as general effectiveness of treatments on patients, but as results of in-vitro studies.
 
-![image](https://user-images.githubusercontent.com/57671317/183437906-6462368d-98fe-47b1-8d26-2118927aa78e.png)
 
 
 <a name="results"/>
