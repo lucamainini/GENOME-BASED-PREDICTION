@@ -20,3 +20,6 @@ To simplify the project scope, the analysis is strictly limited to patients havi
 
 <a name="why_breast"/>
 ## Why breast cancer?
+<p align="center">
+    <img src="./media/why_breast.svg" height="350" alt="why breast?"/>
+</p>
