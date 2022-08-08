@@ -37,10 +37,15 @@ The project itself uses the following files from the CCLE database:
 For seamless integration with the existing code, download and save these files in a directory denoted `Dataset` stored in the root. 
 On the R side, loading the project in R Studio should prompt to load any missing packages you have.  
 A collection of utilities and preprocessing scripts are included in the utilities folder of the project. 
+<a name="assumptions"/>
+
+## Assumptions and terminology 
+*Note:* in the following section the terms "AUC" or "AUC score" are equivalent to "drug efficacy". 
+
 <a name="results"/>
 
-## Results 
-*Note:* in the following section the terms "AUC" or "AUC score" are equivalent to "drug efficacy". 
+## Results
+
 ### Hierarchical Classification 
 <p align="center">
     <img src="./media/hierarchical.png" height="350" alt="pcna_nate"/>
