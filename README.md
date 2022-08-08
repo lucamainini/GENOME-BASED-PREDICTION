@@ -84,4 +84,5 @@ runUrl("https://github.com/lucamainini/GENOME-BASED-PREDICTION/archive/master.zi
        subdir = "clusters/")
 ```
 
-
+## Influencial genes through Random Forest Classification
+Based on the results obtained, we decided to use k-means for clustering. The groups obtained reflect the average effectiveness of the treatments. In particular, one group clearly contains patients with higher AUC.
