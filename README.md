@@ -80,7 +80,8 @@ runApp()
 Alternatively, you can use `runGitHub`.
 
 ```R
-runGitHub("GENOME-BASED-PREDICTION", "rstudio", subdir = "clusters/")
+runUrl("https://github.com/lucamainini/GENOME-BASED-PREDICTION/archive/master.zip",
+       subdir = "clusters/")
 ```
 
 
