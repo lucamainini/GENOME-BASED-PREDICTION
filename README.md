@@ -10,7 +10,5 @@
 <a name="description"/>
 
 ## Description
-Here the results of a statistical analysis of breast cancer data are presented. The relevant datasets used for this project can be found through the [Cancer Cell Line Encyclopedia (CCLE)](https://depmap.org/portal/download/) database. 
-The CCLE is a multi-institutional effort to develop a comprehensive database for varying types of cancer. 
+Here the results of a statistical analysis of breast cancer data are presented. The relevant datasets used for this project can be found through the [Cancer Cell Line Encyclopedia (CCLE)](https://depmap.org/portal/download/) database. The CCLE is a multi-institutional effort to develop a comprehensive database for varying types of cancer. 
 
-All relevant statistical undertakings in this project are categorized under different project folders with respect to their scope and or data. 
