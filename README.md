@@ -34,13 +34,20 @@ The project itself uses the following files from the CCLE database:
 - *data_clinical_sample.txt*
 - *data_drug_treatment_auc.txt*
 - *data_mrna_seq_rpkm.txt*
+
 For seamless integration with the existing code, download and save these files in a directory denoted `Dataset` stored in the root. 
+
 On the R side, loading the project in R Studio should prompt to load any missing packages you have.  
+
 A collection of utilities and preprocessing scripts are included in the utilities folder of the project. 
+
 <a name="assumptions"/>
 
 ## Assumptions and terminology 
-*Note:* in the following section the terms "AUC" or "AUC score" are equivalent to "drug efficacy". 
+In the following sections, the terms "AUC" or "AUC score" are equivalent to "drug efficacy". AUC actually refers to the Area Under the dose-response Curve. These values should therefore not be understood as general effectiveness of treatments on patients, but as results of in-vitro studies.
+
+![image](https://user-images.githubusercontent.com/57671317/183437906-6462368d-98fe-47b1-8d26-2118927aa78e.png)
+
 
 <a name="results"/>
 
