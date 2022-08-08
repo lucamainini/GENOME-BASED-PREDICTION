@@ -73,17 +73,14 @@ To run this Shiny app, you can clone the git repository and then use `runApp()`:
 
 ```R
 # First, clone the repository with git. 
-# Ir you have cloned it into ~/clusters
+# If you have cloned it into ~/clusters
 setwd("~/clusters")
 runApp()
 ```
 Alternatively, you can use `runGitHub`.
-To run a Shiny app from a subdirectory in the repo or zip file, you can use the `subdir` argument. This repository happens to contain another copy of the app in `inst/shinyapp/`.
 
 ```R
 runGitHub("GENOME-BASED-PREDICTION", "rstudio", subdir = "clusters/")
-runUrl("https://github.com/rstudio/shiny_example/archive/master.tar.gz",
-  subdir = "inst/shinyapp/")
 ```
 
 
