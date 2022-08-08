@@ -18,7 +18,7 @@ Here the results of a statistical analysis of breast cancer data are presented. 
 The goal of this project is to understand the link between the genetic and physiological data of a patient and how efficiently cancer-treating drugs perform on their cells. First, patients were divided into groups based on the effectiveness of the treatments on their cells. Then, we tried to explain these groups with their gene expression.
 To simplify the project scope, the analysis is strictly limited to patients having breast cancer, as opposed to all cancers which were present in the main dataset. 
 
-<a name="why_breast"/>
+<a name="Why breast cancer?"/>
 ## Why breast cancer?
 <p align="center">
     <img src="./media/why_breast.svg" height="350" alt="why breast?"/>
