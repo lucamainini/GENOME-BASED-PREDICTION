@@ -10,7 +10,7 @@
 <a name="description"/>
 
 ## Description
-Here the results of a statistical analysis of breast cancer data are presented. The relevant datasets used for this project can be found through the [Cancer Cell Line Encyclopedia (CCLE)](https://depmap.org/portal/download/) database. The CCLE is a multi-institutional effort to develop a comprehensive database for varying types of cancer. Our main objective was to infer which genomic aspects most influence the sensitivity to antitumoral drugs
+Here the results of a statistical analysis of breast cancer data are presented. The relevant datasets used for this project can be found through the [Cancer Cell Line Encyclopedia (CCLE)](https://depmap.org/portal/download/) database. The CCLE is a multi-institutional effort to develop a comprehensive database for varying types of cancer. Our main **objective was to infer which genomic aspects most influence the sensitivity to antitumoral drugs.**
 
 <a name="motivation"/>
 
