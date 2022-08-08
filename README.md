@@ -87,7 +87,9 @@ runUrl("https://github.com/lucamainini/GENOME-BASED-PREDICTION/archive/master.zi
 Based on the results obtained, we decided to use k-means for clustering. The groups obtained reflect the average effectiveness of the treatments. In particular, one group clearly contains patients with higher AUC.
 
 ## Influencial genes through Random Forest Classification
-The main hypothesis was that we could explain the clusters using the genetic information of the patients. Using the previously obtained groups, we fitted a Random Forest Classification Model. The most influential gene was FBL which is known to be an independent marker of poor outcome in breast cancer[^note]
+The main hypothesis was that we could explain the clusters using the genetic information of the patients. Using the previously obtained groups, we fitted a Random Forest Classification Model. The most influential gene was FBL which is known to be an independent marker of poor outcome in breast cancer[^note].
+
+![step1](media/clustering.svg)
 
 [^note]:Nguyen Van Long, F., Lardy-Cleaud, A., Carène, D. et al. Low level of Fibrillarin, a ribosome biogenesis factor, is a new independent marker of poor outcome in breast cancer. BMC Cancer 22, 526 (2022). https://doi.org/10.1186/s12885-022-09552-x
 
