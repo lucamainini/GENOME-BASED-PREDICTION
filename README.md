@@ -65,7 +65,25 @@ You can find the final datasets in the `Dataset` folder.
 The aim of this step is to divide the patients according to the effectiveness of the treatments. For example, we could try to obtain a group where all treatments are effective and one where treatments generally do not work. Remember we define the drug performance as in-vitro efficacy (measured by AUC scores). 
 
 Using the implemented Shiny app, you can view the clusters obtained with a hierarchical approach or with a non-hierarchical one.
-![This is an image](https://myoctocat.com/assets/images/base-octocat.svg)
-In the second step, key genes are found.
+
+![APP](media/app_1.jpeg)
+![APP](media/app_2.png)
+
+To run this Shiny app, you can clone the git repository and then use `runApp()`:
+
+```R
+# First, clone the repository with git. 
+# Ir you have cloned it into ~/clusters
+setwd("~/clusters")
+runApp()
+```
+Alternatively, you can use `runGitHub`.
+To run a Shiny app from a subdirectory in the repo or zip file, you can use the `subdir` argument. This repository happens to contain another copy of the app in `inst/shinyapp/`.
+
+```R
+runGitHub("GENOME-BASED-PREDICTION", "rstudio", subdir = "clusters/")
+runUrl("https://github.com/rstudio/shiny_example/archive/master.tar.gz",
+  subdir = "inst/shinyapp/")
+```
 
 
