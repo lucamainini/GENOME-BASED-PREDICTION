@@ -10,7 +10,7 @@
 <a name="description"/>
 
 ## Description
-Here the results of a statistical analysis of breast cancer data are presented. The relevant datasets used for this project can be found through the [Cancer Cell Line Encyclopedia (CCLE)](https://depmap.org/portal/download/) database. The CCLE is a multi-institutional effort to develop a comprehensive database for varying types of cancer. **Our main objective was to infer which genomic aspects most influence the sensitivity to antitumoral drugs.**
+Here the results of a statistical analysis of breast cancer data are presented. This project was carried out during the Applied Statistics course at the Politecnico di Milano. The relevant datasets used for this project can be found through the [Cancer Cell Line Encyclopedia (CCLE)](https://depmap.org/portal/download/) database. The CCLE is a multi-institutional effort to develop a comprehensive database for varying types of cancer. **Our main objective was to infer which genomic aspects most influence the sensitivity to antitumoral drugs.**
 
 <a name="motivation"/>
 
@@ -35,7 +35,6 @@ The project itself uses the following files from the CCLE database:
 - *data_drug_treatment_auc.txt*
 - *data_mrna_seq_rpkm.txt*
 For seamless integration with the existing code, download and save these files in a directory denoted `Dataset` stored in the root. 
-
 On the R side, loading the project in R Studio should prompt to load any missing packages you have.  
 A collection of utilities and preprocessing scripts are included in the utilities folder of the project. 
 <a name="results"/>
