@@ -54,7 +54,7 @@ On the R side, loading the project in R Studio should prompt to load any missing
 A collection of utilities and preprocessing scripts are included in the utilities folder of the project. 
 
 *Data preprocess:* treatments with insufficient data were removed, and finally missing values were filled.
-You can find the final datasets in the `Dataset` folder.
+You can find the obtained datasets in the `Dataset` folder.
 
 <a name="results"/>
 
