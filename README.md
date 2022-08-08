@@ -95,13 +95,13 @@ Then, using the previously obtained groups, we fitted a Random Forest Classifica
 ![step1](media/clustering.svg)
 
 [^fbl]:Nguyen Van Long, F., Lardy-Cleaud, A., Carène, D. et al. Low level of Fibrillarin, a ribosome biogenesis factor, is a new independent marker of poor outcome in breast cancer. BMC Cancer 22, 526 (2022). https://doi.org/10.1186/s12885-022-09552-x
-
-![step2](expression_group.svg)
+As can be seen in the graph below, the expression of these genes is particularly different in the various groups.
+![expression_of selected genes in groups](expression_group.svg)
 
 ## Influencial genes through LASSO Regression
 The second way in which we carried out features (genes) selection was via a LASSO regression of the average efficiency over these drugs on a cell using the genetic expression and extracted coefficients which are above a certain threshold. 
 
-![step2](media/lasso.svg)
+![influential genes by LASSO](media/lasso.svg)
 
 This gene pool was cross-referenced with the outcome of previous random forests, and the intersection of the chosen genes from each method was kept.  After this, exhaustive search was applied to the reduced gene pool to find the best selection of regressors for models with *p=1...n*-dimensional feature spaces. The identified genes were researched to see whether or not they have been previously identified as being influential in breast cancer expression.  In the end, the feature space was reduced to 8 significant genes (our regressors). 
 
