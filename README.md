@@ -27,3 +27,26 @@ To simplify the project scope, the analysis is strictly limited to patients havi
 <p align="center">
     <img src="./media/why_breast.svg" height="350" alt="why breast?"/>
 </p>
+
+## Requirements 
+The project itself uses the following files from the CCLE database:
+- *data_clinical_patient.txt*
+- *data_clinical_sample.txt*
+- *data_drug_treatment_auc.txt*
+- *data_mrna_seq_rpkm.txt*
+For seamless integration with the existing code, download and save these files in a directory denoted `Dataset` stored in the root. 
+
+On the R side, loading the project in R Studio should prompt to load any missing packages you have.  
+A collection of utilities and preprocessing scripts are included in the utilities folder of the project. 
+<a name="results"/>
+
+## Results 
+*Note:* in the following section the terms "AUC" or "AUC score" are equivalent to "drug efficacy". 
+### Hierarchical Classification 
+<p align="center">
+    <img src="./media/hierarchical.png" height="350" alt="pcna_nate"/>
+</p>
+
+One vein of analysis was to consider the clusters arising from applying heirarchical clustering (euclidean distance, single linkage) to a reduced dataset containing only two cancers which in theory should be quite different in their manifestation.  We prove the merit of this approach using samples corresponding to breast and central nervous system cancers. 
+
+
