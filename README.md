@@ -96,6 +96,7 @@ Then, using the previously obtained groups, we fitted a Random Forest Classifica
 
 [^fbl]:Nguyen Van Long, F., Lardy-Cleaud, A., Carène, D. et al. Low level of Fibrillarin, a ribosome biogenesis factor, is a new independent marker of poor outcome in breast cancer. BMC Cancer 22, 526 (2022). https://doi.org/10.1186/s12885-022-09552-x
 
+![step2](expression_group.svg)
 
 ## Influencial genes through LASSO Regression
 The second way in which we carried out features (genes) selection was via a LASSO regression of the average efficiency over these drugs on a cell using the genetic expression and extracted coefficients which are above a certain threshold. 
@@ -104,8 +105,9 @@ The second way in which we carried out features (genes) selection was via a LASS
 
 This gene pool was cross-referenced with the outcome of previous random forests, and the intersection of the chosen genes from each method was kept.  After this, exhaustive search was applied to the reduced gene pool to find the best selection of regressors for models with *p=1...n*-dimensional feature spaces. The identified genes were researched to see whether or not they have been previously identified as being influential in breast cancer expression.  In the end, the feature space was reduced to 8 significant genes (our regressors). 
 
+<p align="center">
+    <img src="./media/model_summary.png" height="350" alt="pcna_nate"/>
+</p>
 
-
-To account for the limited number of samples present in the cleaned dataset (removal of NA's and non-relevant cancer-treating drugs) k-fold cross validation was used.  The (k=5) cross-validated R^2 values during the training phase for each fold were: 0.746, 0.770, 0.758, 0.745, and 0.786.
-
-Since the auc score is a number in the range [0,1], it would have been more apt to use a logistic regression model on our data, but such multi-dimensional infrastructure did not exist in any R libraries the practitioner could find.  
+To account for the limited number of samples present in the cleaned dataset (removal of NA's and non-relevant cancer-treating drugs) k-fold cross validation was used. The (k=5) cross-validated R^2 values during the training phase for each fold were: 0.746, 0.770, 0.758, 0.745, and 0.786.
+ 
