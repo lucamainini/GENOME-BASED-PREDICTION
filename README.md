@@ -51,8 +51,6 @@ For seamless integration with the existing code, download and save these files i
 
 On the R side, loading the project in R Studio should prompt to load any missing packages you have.  
 
-A collection of utilities and preprocessing scripts are included in the utilities folder of the project. 
-
 *Data preprocess:* treatments with insufficient data were removed, and finally missing values were filled.
 You can find the obtained datasets in the `Dataset` folder.
 
