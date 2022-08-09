@@ -98,6 +98,8 @@ Then, using the previously obtained groups, we fitted a Random Forest Classifica
 As can be seen in the graph below, the expression of these genes is particularly different in the various groups.
 ![expression_of selected genes in groups](expression_group.svg)
 
+
+
 ## Influencial genes through LASSO Regression
 The second way in which we carried out features (genes) selection was via a LASSO regression of the average efficiency over these drugs on a cell using the genetic expression and extracted coefficients which are above a certain threshold. 
 
