@@ -95,6 +95,7 @@ Then, using the previously obtained groups, we fitted a Random Forest Classifica
 ![step1](media/clustering.svg)
 
 [^fbl]:Nguyen Van Long, F., Lardy-Cleaud, A., Carène, D. et al. Low level of Fibrillarin, a ribosome biogenesis factor, is a new independent marker of poor outcome in breast cancer. BMC Cancer 22, 526 (2022). https://doi.org/10.1186/s12885-022-09552-x
+
 As can be seen in the graph below, the expression of these genes is particularly different in the various groups.
 ![expression_of selected genes in groups](expression_group.svg)
 
