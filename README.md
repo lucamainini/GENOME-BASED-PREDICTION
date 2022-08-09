@@ -92,21 +92,36 @@ The main effort of this project was to predict the auc score on a given cell usi
 
 Then, using the previously obtained groups, we fitted a Random Forest Classification Model. The most influential gene was FBL which is known to be an independent marker of poor outcome in breast cancer[^fbl].
 
-![step1](media/clustering.svg)
+<p align="center">
+    <img src="./media/clustering.svg" height="550" alt="step1"/>
+</p>
 
 [^fbl]:Nguyen Van Long, F., Lardy-Cleaud, A., Carène, D. et al. Low level of Fibrillarin, a ribosome biogenesis factor, is a new independent marker of poor outcome in breast cancer. BMC Cancer 22, 526 (2022). https://doi.org/10.1186/s12885-022-09552-x
+
 As can be seen in the graph below, the expression of these genes is particularly different in the various groups.
-![expression_of selected genes in groups](expression_group.svg)
+
+<p align="center">
+    <img src="./media/expression_group.svg" height="350" alt="expression_of selected genes in groups"/>
+</p>
+
+## LDA CLASSIFICATION
+Using a small number of selected genes and the previously determined groups, we trained an LDA classification algorithm. Using the app, you can interactively visualise the results. 
+
+<p align="center">
+    <img src="./media/LDA.PNG" height="350" alt="lda classification"/>
+</p>
 
 ## Influencial genes through LASSO Regression
 The second way in which we carried out features (genes) selection was via a LASSO regression of the average efficiency over these drugs on a cell using the genetic expression and extracted coefficients which are above a certain threshold. 
 
-![influential genes by LASSO](media/lasso.svg)
+<p align="center">
+    <img src="./media/lasso.svg" height="550" alt="influential genes by LASSO"/>
+</p>
 
 This gene pool was cross-referenced with the outcome of previous random forests, and the intersection of the chosen genes from each method was kept.  After this, exhaustive search was applied to the reduced gene pool to find the best selection of regressors for models with *p=1...n*-dimensional feature spaces. The identified genes were researched to see whether or not they have been previously identified as being influential in breast cancer expression.  In the end, the feature space was reduced to 8 significant genes (our regressors). 
 
 <p align="center">
-    <img src="./media/model_summary.png" height="350" alt="pcna_nate"/>
+    <img src="./media/model_summary.png" height="550" alt="pcna_nate"/>
 </p>
 
 To account for the limited number of samples present in the cleaned dataset (removal of NA's and non-relevant cancer-treating drugs) k-fold cross validation was used. The (k=5) cross-validated R^2 values during the training phase for each fold were: 0.746, 0.770, 0.758, 0.745, and 0.786.
