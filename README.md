@@ -84,7 +84,7 @@ runUrl("https://github.com/lucamainini/GENOME-BASED-PREDICTION/archive/master.zi
 
 Based on the results obtained, we decided to use k-means for clustering. The groups obtained reflect the average effectiveness of the treatments. In particular, one group clearly contains patients with higher AUC.
 
-## Influencial genes through Random Forest Classification
+### Influencial genes through Random Forest Classification
 *Dimensionality reduction*
 The main effort of this project was to predict the auc score on a given cell using the genetic and physiological information of the patient.  Before such analysis could be undertaken, however, it was necessary to reduce the dimensionality of the feature space since over 50000 gene expressions were included in the provided dataset. The first thing we did was to disregard those genes whose variability was too low between patients.
 
@@ -102,14 +102,14 @@ As can be seen in the graph below, the expression of these genes is particularly
     <img src="./media/expression_group.svg" height="350" alt="expression_of selected genes in groups"/>
 </p>
 
-## LDA Classification
+### LDA Classification
 Using a small number of selected genes and the previously determined groups, we trained an LDA classification algorithm. Using the app contained in `clusters` folder, you can interactively visualise the results. *We emphasise that LDA's assumptions are only partially verified.*
 
 <p align="center">
     <img src="./media/LDA.png" height="450" alt="lda classification"/>
 </p>
 
-## Influencial genes through LASSO Regression
+### Influencial genes through LASSO Regression
 The second way in which we carried out features (genes) selection was via a LASSO regression of the average efficiency over these drugs on a cell using the genetic expression and extracted coefficients which are above a certain threshold. 
 
 <p align="center">
