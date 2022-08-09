@@ -132,6 +132,6 @@ One should be cognizant that in order to confirm the validity of these results, 
 In addition, it is important to point out that the AUC score refers to an in-vitro analysis. The values predicted by our linear model should therefore be understood as a rough indicator for treatment efficacy. Having data available on actual patient therapies would allow for the real-life robustness of the model to be ascertained. Finally, since the variability among the AUC scores of the chosen treatments is relatively low, it would be prudent to repeat the analysis of the clusters on a larger, higher variance dataset. New relationships and understandings may emerge.
 
 ## Acknowledgement
-*This project was realised together with Jara--Mikolajczak Jimmy Aygalic, Montani Giulia, Nethercott Robert James Nate and Troilo Roberta.<br>
+*This project was realised together with `Jara--Mikolajczak Jimmy Aygalic, Montani Giulia, Nethercott Robert James Nate and Troilo Roberta`.<br>
 In this git folder you will find the app (which I made myself) for displaying the obtained clusters and classification results. For any further information on our work, please contact me by e-mail. <br>
-Last but not least, I would like to thank our supervisors Dr. Pietro Pinoli & Prof. Francesca Ieva for all their help and advice with this project.*
+Last but not least, I would like to thank our supervisors `Dr. Pietro Pinoli` & `Prof. Francesca Ieva` for all their help and advice with this project.*
