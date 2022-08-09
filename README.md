@@ -133,4 +133,5 @@ In addition, it is important to point out that the AUC score refers to an in-vit
 
 ## Acknowledgement
 *This project was realised together with Jara--Mikolajczak Jimmy Aygalic, Montani Giulia, Nethercott Robert James Nate and Troilo Roberta.<br>
-Finally, I would like to thank our supervisors Dr. Pietro Pinoli & Prof. Francesca Ieva for all their help and advice with this project.*
+In this git folder you will find the app (which I made myself) for displaying the obtained clusters and classification results. For any further information on our work, please contact me by e-mail. <br>
+Last but not least, I would like to thank our supervisors Dr. Pietro Pinoli & Prof. Francesca Ieva for all their help and advice with this project.*
