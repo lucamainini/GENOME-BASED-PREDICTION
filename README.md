@@ -51,8 +51,6 @@ For seamless integration with the existing code, download and save these files i
 
 On the R side, loading the project in R Studio should prompt to load any missing packages you have.  
 
-A collection of utilities and preprocessing scripts are included in the utilities folder of the project. 
-
 *Data preprocess:* treatments with insufficient data were removed, and finally missing values were filled.
 You can find the obtained datasets in the `Dataset` folder.
 
@@ -90,7 +88,7 @@ Based on the results obtained, we decided to use k-means for clustering. The gro
 *Dimensionality reduction*
 The main effort of this project was to predict the auc score on a given cell using the genetic and physiological information of the patient.  Before such analysis could be undertaken, however, it was necessary to reduce the dimensionality of the feature space since over 50000 gene expressions were included in the provided dataset. The first thing we did was to disregard those genes whose variability was too low between patients.
 
-Then, using the previously obtained groups, we fitted a Random Forest Classification Model. The most influential gene was FBL which is known to be an independent marker of poor outcome in breast cancer[^fbl].
+Then, using the previously obtained groups, we fitted a Random Forest Classification Model. The most influential gene was FBL which is known to be an independent marker of poor outcome in breast cancer[^fbl]. Some of the key genes are shown in next Figure.
 
 <p align="center">
     <img src="./media/clustering.svg" height="550" alt="step1"/>
@@ -104,11 +102,11 @@ As can be seen in the graph below, the expression of these genes is particularly
     <img src="./media/expression_group.svg" height="350" alt="expression_of selected genes in groups"/>
 </p>
 
-## LDA CLASSIFICATION
-Using a small number of selected genes and the previously determined groups, we trained an LDA classification algorithm. Using the app, you can interactively visualise the results. 
+## LDA Classification
+Using a small number of selected genes and the previously determined groups, we trained an LDA classification algorithm. Using the app contained in `clusters` folder, you can interactively visualise the results. 
 
 <p align="center">
-    <img src="./media/LDA.PNG" height="350" alt="lda classification"/>
+    <img src="./media/LDA.png" height="450" alt="lda classification"/>
 </p>
 
 ## Influencial genes through LASSO Regression
@@ -121,8 +119,19 @@ The second way in which we carried out features (genes) selection was via a LASS
 This gene pool was cross-referenced with the outcome of previous random forests, and the intersection of the chosen genes from each method was kept.  After this, exhaustive search was applied to the reduced gene pool to find the best selection of regressors for models with *p=1...n*-dimensional feature spaces. The identified genes were researched to see whether or not they have been previously identified as being influential in breast cancer expression.  In the end, the feature space was reduced to 8 significant genes (our regressors). 
 
 <p align="center">
-    <img src="./media/model_summary.png" height="550" alt="pcna_nate"/>
+    <img src="./media/model_summary.png" height="450" alt="pcna_nate"/>
 </p>
 
 To account for the limited number of samples present in the cleaned dataset (removal of NA's and non-relevant cancer-treating drugs) k-fold cross validation was used. The (k=5) cross-validated R^2 values during the training phase for each fold were: 0.746, 0.770, 0.758, 0.745, and 0.786.
- 
+
+## Conclusion and Limits of our project
+There is a high degree of diversity between and within breast tumours as well as amongst cancer-bearing individuals. Understanding the molecular features responsible for this heterogeneity is important to correctly diagnose and to obtain more efficient treatment strategies. To this end, our project statistically confirms results previously obtained from bio-chemical analyses.
+
+In particular, it shows a relationship between the expression of a select subset of pivotal genes and the in-vitro treatment efficacy (measured with AUC scores). 
+One should be cognizant that in order to confirm the validity of these results, the models here presented should be tested on a larger and more varied dataset. 
+In addition, it is important to point out that the AUC score refers to an in-vitro analysis. The values predicted by our linear model should therefore be understood as a rough indicator for treatment efficacy. Having data available on actual patient therapies would allow for the real-life robustness of the model to be ascertained. Finally, since the variability among the AUC scores of the chosen treatments is relatively low, it would be prudent to repeat the analysis of the clusters on a larger, higher variance dataset. New relationships and understandings may emerge.
+
+## Acknowledgement
+*This project was realised together with Jara--Mikolajczak Jimmy Aygalic, Montani Giulia, Nethercott Robert James Nate and Troilo Roberta.<br>
+In this git folder you will find the app (which I made myself) for displaying the obtained clusters and classification results. For any further information on our work, please contact me by e-mail. <br>
+Last but not least, I would like to thank our supervisors Dr. Pietro Pinoli & Prof. Francesca Ieva for all their help and advice with this project.*
