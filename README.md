@@ -102,7 +102,7 @@ As can be seen in the graph below, the expression of these genes is particularly
     <img src="./media/expression_group.svg" height="350" alt="expression_of selected genes in groups"/>
 </p>
 
-## LDA CLASSIFICATION
+## LDA Classification
 Using a small number of selected genes and the previously determined groups, we trained an LDA classification algorithm. Using the app contained in `clusters` folder, you can interactively visualise the results. 
 
 <p align="center">
