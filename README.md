@@ -107,6 +107,9 @@ As can be seen in the graph below, the expression of these genes is particularly
 ## LDA CLASSIFICATION
 Using a small number of selected genes and the previously determined groups, we trained an LDA classification algorithm. Using the app, you can interactively visualise the results. 
 
+<p align="center">
+    <img src="./media/LDA.PNG" height="350" alt="lda classification"/>
+</p>
 
 ## Influencial genes through LASSO Regression
 The second way in which we carried out features (genes) selection was via a LASSO regression of the average efficiency over these drugs on a cell using the genetic expression and extracted coefficients which are above a certain threshold. 
