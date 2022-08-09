@@ -88,7 +88,7 @@ Based on the results obtained, we decided to use k-means for clustering. The gro
 *Dimensionality reduction*
 The main effort of this project was to predict the auc score on a given cell using the genetic and physiological information of the patient.  Before such analysis could be undertaken, however, it was necessary to reduce the dimensionality of the feature space since over 50000 gene expressions were included in the provided dataset. The first thing we did was to disregard those genes whose variability was too low between patients.
 
-Then, using the previously obtained groups, we fitted a Random Forest Classification Model. The most influential gene was FBL which is known to be an independent marker of poor outcome in breast cancer[^fbl].
+Then, using the previously obtained groups, we fitted a Random Forest Classification Model. The most influential gene was FBL which is known to be an independent marker of poor outcome in breast cancer[^fbl]. Some of the key genes are shown in next Figure.
 
 <p align="center">
     <img src="./media/clustering.svg" height="550" alt="step1"/>
